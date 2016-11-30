@@ -1,0 +1,18 @@
+<h1>Welcome to my Travel site!</h1>
+<p> Lets go on an adventure</p>
+<h1><%= @homestate %> </h1>
+<% @countries.each do |country| %>
+
+<ul>
+<li><%= country %></li>
+</ul>
+<% end %>
+ 
+ <%= image_tag "australia.jpeg", class: "images" %>
+  <%= image_tag "italy.jpeg", class: "images" %>
+   <%= image_tag "trees.jpeg", class: "images" %>
+   <ul>
+       <% @images.each do |pic| %>
+       <li><%= image_tag pic, class: "images" %></li>
+       <% end %>
+   </ul>

@@ -1,0 +1,20 @@
+
+<style>
+    body {
+        background: <%= @color %>;
+    }
+</style>
+
+
+
+
+<h1>Woopity dooooo</h1>
+    <p>lots of places and things to do </p>
+        
+        <p>My favorite color is <%= @color %></p>
+    
+    <p> my shoe size is <%= @size %></p>
+
+<% if @size.to_i >12 %>
+<p> good lord i have giant feet!</p>
+<% end %>
